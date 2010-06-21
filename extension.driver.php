@@ -1,7 +1,10 @@
 <?php
 	
 	class Extension_Unpublishedfilter extends Extension {
-		
+
+		/**
+		 * Extension information
+		 */	
 		public function about() {
 			return array(
 				'name' => 'Unpublished Filter',
@@ -15,7 +18,10 @@
 				'description' => 'Greyes out unpuplished entries in the section overview.'
 			);
 		}
-		
+
+		/**
+		 * Add callback functions to backend delegates
+		 */	
 		public function getSubscribedDelegates() {
 			return array(
 				array(
@@ -26,13 +32,16 @@
 			);
 		}
 		
+		/**
+		 * Add JavaScript
+		 */
 		public function initaliseAdminPageHead($context) {
 			$page = $context['parent']->Page;
-			if($page instanceof ContentPublish and $page->_context['page'] == 'index') {
+			
+			// Include filter?
+			if ($page instanceof ContentPublish and $page->_context['page'] == 'index') {
 				$page->addScriptToHead(URL . '/extensions/unpublishedfilter/assets/symphony.unpublishedfilter.js', 2000);
 			}
 			
 		}
 	}
-	
-?>
