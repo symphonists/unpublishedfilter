@@ -5,20 +5,17 @@
 		'author' => array(
 			'name' => 'Nils Hörrmann',
 			'email' => 'post@nilshoerrmann.de',
-			'website' => 'http://www.nilshoerrmann.de'
+			'website' => 'http://nilshoerrmann.de'
 		),
-		'release-date' => '2010-06-19'
+		'release-date' => '2011-02-01'
 	);
-	
-	
-	/*
-	 * EXTENSION: Unpublished Filter
-	 * Localisation strings
-	 */
 
+	/**
+	 * Unpublished Filter
+	 */
 	$dictionary = array(
-	
-		'published' =>
+
+		'published' => 
 		'veröffentlicht'
 
 	);

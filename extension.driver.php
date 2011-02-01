@@ -8,11 +8,11 @@
 		public function about() {
 			return array(
 				'name' => 'Unpublished Filter',
-				'version' => '1.1',
-				'release-date' => '2010-06-21',
+				'version' => '1.2',
+				'release-date' => '2011-02-01',
 				'author' => array(
 					'name' => 'Nils Hörrmann',
-					'website' => 'http://www.nilshoerrmann.de',
+					'website' => 'http://nilshoerrmann.de',
 					'email' => 'post@nilshoerrmann.de'
 				),
 				'description' => 'Greyes out unpuplished entries in the section overview.'
@@ -36,11 +36,11 @@
 		 * Add JavaScript
 		 */
 		public function initaliseAdminPageHead($context) {
-			$page = $context['parent']->Page;
-			
-			// Include filter?
-			if ($page instanceof ContentPublish and $page->_context['page'] == 'index') {
-				$page->addScriptToHead(URL . '/extensions/unpublishedfilter/assets/symphony.unpublishedfilter.js', 2000);
+			$callback = Symphony::Engine()->getPageCallback();
+
+			// Append javascript for publish table
+			if($callback['driver'] == 'publish' && $callback['context']['page'] == 'index') {
+				Symphony::Engine()->Page->addScriptToHead(URL . '/extensions/unpublishedfilter/assets/unpublishedfilter.publish.js', 2000);
 			}
 			
 		}
