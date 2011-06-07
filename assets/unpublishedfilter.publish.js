@@ -24,8 +24,9 @@
 			if(title == Symphony.Language.get('published')) {
 
 				// Find unpublished entries
-				table.find('tr td:eq(' + index + ')').each(function() {
-					var cell = $(this),
+				table.find('tr').each(function() {
+					var row = $(this),
+						cell = row.find('td:eq(' + index + ')'),
 						text = $.trim(cell.text());
 						
 					// Gray out row
