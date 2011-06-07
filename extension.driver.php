@@ -8,8 +8,8 @@
 		public function about() {
 			return array(
 				'name' => 'Unpublished Filter',
-				'version' => '1.2',
-				'release-date' => '2011-02-01',
+				'version' => '1.3',
+				'release-date' => '2011-06-07',
 				'author' => array(
 					'name' => 'Nils Hörrmann',
 					'website' => 'http://nilshoerrmann.de',
