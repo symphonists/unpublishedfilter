@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="unpublishedfilter" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Unpublished Filter</name>
+	<description>Greyes out unpuplished entries in the publish overview.</description>
+	<repo type="github">https://github.com/symphonists/unpublishedfilter</repo>
+	<url type="discuss">http://getsymphony.com/discuss/thread/46509/</url>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonists" symphony="Nils">Nils Hörrmann</name>
+			<website>http://nilshoerrmann.de</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.4" date="2012-09-28" min="2.3">
+			- updated extension compatibility with Symphony 2.3
+		</release>
+		<release version="1.3" date="2011-06-07" min="2.0.7" />
+	</releases>
+</extension>
