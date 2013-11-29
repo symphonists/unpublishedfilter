@@ -7,7 +7,7 @@
 			'email' => 'open-source@deuxhuithuit.com',
 			'website' => 'http://www.deuxhuithuit.com'
 		),
-		'release-date' => '2012-10-09'
+		'release-date' => '2013-11-29'
 	);
 
 	/**
@@ -16,6 +16,12 @@
 	$dictionary = array(
 
 		'published' => 
-		'publié'
+		'publié',
+
+		'status' =>
+		'état',
+
+		'yes' =>
+		'oui'
 
 	);

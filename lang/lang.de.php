@@ -7,7 +7,7 @@
 			'email' => 'post@nilshoerrmann.de',
 			'website' => 'http://nilshoerrmann.de'
 		),
-		'release-date' => '2011-02-01'
+		'release-date' => '2013-11-29'
 	);
 
 	/**
@@ -16,6 +16,12 @@
 	$dictionary = array(
 
 		'published' => 
-		'veröffentlicht'
+		'veröffentlicht',
+
+		'status' => 
+		'Status',
+
+		'yes' =>
+		'ja'
 
 	);

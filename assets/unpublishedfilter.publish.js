@@ -1,42 +1,63 @@
-
 (function($) {
-	
-	/**
-	 * Filter unpublished entries.
-	 *
-	 * @author: Nils Hörrmann, post@nilshoerrmann.de
-	 * @source: http://github.com/nilshoerrmann/unpublishedfilter
-	 */
-	$(document).ready(function() {
-		var table = $('table');
 
-		// Language strings
-		Symphony.Language.add({
-			'No': false,
-			'published': false
-		}); 
 
-		// Find publish field
-		table.find('thead th').each(function(index) {
-			var column = $(this),
-				title = $.trim(column.text()).toLowerCase();
-			
-			if(title == Symphony.Language.get('published')) {
+	var Unpublished = function() {
+		var table,
+			fieldNames = ['status', 'published'],
+			fieldToggles = ['yes', 'published'],
+			fieldId = 0;
 
-				// Find unpublished entries
-				table.find('tr').each(function() {
-					var row = $(this),
-						cell = row.find('td:eq(' + index + ')'),
-						text = $.trim(cell.text());
-						
-					// Gray out row
-					if(text == Symphony.Language.get('No')) {
-						cell.parent().addClass('inactive');
-					}
-				});		
+		function init() {
+			table = $('#contents table');
+
+			// Translate names and toggles
+			$.each(fieldNames, function(index, value) {
+				fieldNames.push(translate(value));
+			});
+			$.each(fieldToggles, function(index, value) {
+				fieldToggles.push(translate(value));
+			});
+
+			// Find publish status fields
+			table.find('th').each(find);
+
+			// Dim unpublished entries
+			table.find('.' + fieldId).each(dim);
+		}
+
+		// Find publish status fields
+		function find() {
+			if($.inArray(this.innerText.toLowerCase(), fieldNames) > -1) {
+				fieldId = this.id;
 			}
-		});
+		}
 
+		// Dim unpublished entries
+		function dim() {
+			if($.inArray(this.innerText.toLowerCase(), fieldToggles) == -1) {
+				$(this).parent().addClass('inactive');
+			}
+		}
+
+		// Translate string
+		function translate(string) {
+			term = {};
+			term[string] = false;
+			Symphony.Language.add(term);
+			return Symphony.Language.get(string);
+		}
+
+	/*-------------------------------------------------------------------------
+		API
+	-------------------------------------------------------------------------*/
+
+		return {
+			'init': init
+		};
+	}();
+
+	$(document).on('ready.unpublishedfilter', function() {
+		Unpublished.init();
 	});
 	
 })(jQuery.noConflict());
