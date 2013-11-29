@@ -18,10 +18,19 @@
 		'published' => 
 		'veröffentlicht',
 
+		'activated' => 
+		'freigeschaltet',
+
 		'status' => 
 		'Status',
 
 		'yes' =>
-		'ja'
+		'ja',
+
+		'date' =>
+		'datum', 
+
+		'publish date' =>
+		'Veröffentlichungsdatum'
 
 	);

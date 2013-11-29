@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'icons';
+	src: url('fonts/icons.eot?45544828');
+	src: url('fonts/icons.eot?45544828#iefix') format('embedded-opentype'),
+		 url('fonts/icons.svg?45544828#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.unpublishedfilter-draft,
+.unpublishedfilter-draft a,
+.unpublishedfilter-future,
+.unpublishedfilter-future a {
+	color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.unpublishedfilter-future a::before {
+	content: '\e80b';
+	font-family: icons;
+	font-size: 12px;
+	border-bottom: 1px solid #fff;
+	padding-right: 0.5em;
+	color: #3f69a5;
+}
+
+.unpublishedfilter-future:nth-child(odd) a::before {
+	border-bottom: 1px solid #f5f5f5;	
+}
+
+.unpublishedfilter-published {
+	color: #000;
+}

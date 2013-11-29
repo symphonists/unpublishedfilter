@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2013 by original authors @ fontello.com</metadata>
+<defs>
+<font id="icons" horiz-adv-x="1000" >
+<font-face font-family="icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="clock" unicode="&#xe80b;" d="m460 810q190 0 325-135t135-325t-135-325t-325-135t-325 135t-135 325t135 325t325 135z m0-820q150 0 255 106t105 254q0 150-105 255t-255 105q-148 0-254-105t-106-255q0-148 106-254t254-106z m36 620l0-244l150-150l-50-50l-170 170l0 274l70 0z" horiz-adv-x="920" />
+</font>
+</defs>
+</svg>

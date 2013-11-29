@@ -23,7 +23,9 @@
 
 			// Append javascript for publish table
 			if($callback['driver'] == 'publish' && $callback['context']['page'] == 'index') {
-				Symphony::Engine()->Page->addScriptToHead(URL . '/extensions/unpublishedfilter/assets/unpublishedfilter.publish.js', 2000);
+				Administration::instance()->Page->addStylesheetToHead(URL . '/extensions/unpublishedfilter/assets/unpublishedfilter.publish.css', 'screen', 2000);
+				Administration::instance()->Page->addScriptToHead(URL . '/extensions/unpublishedfilter/lib/moment-with-lang.min.js', 2001);
+				Administration::instance()->Page->addScriptToHead(URL . '/extensions/unpublishedfilter/assets/unpublishedfilter.publish.js', 2002);
 			}
 			
 		}

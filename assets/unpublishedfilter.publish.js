@@ -2,17 +2,21 @@
 
 
 	var Unpublished = function() {
-		var table,
-			fieldNames = ['status', 'published'],
-			fieldToggles = ['yes', 'published'],
-			fieldId = 0;
+		var fieldNames = ['status', 'published'],
+			fieldDates = ['date', 'publish date'],
+			fieldToggles = ['yes', 'published', 'activated'],
+			fieldId = null,
+			fieldDateId = null;
 
 		function init() {
-			table = $('#contents table');
+			var table = $('#contents table');
 
-			// Translate names and toggles
+			// Get translations
 			$.each(fieldNames, function(index, value) {
 				fieldNames.push(translate(value));
+			});
+			$.each(fieldDates, function(index, value) {
+				fieldDates.push(translate(value));
 			});
 			$.each(fieldToggles, function(index, value) {
 				fieldToggles.push(translate(value));
@@ -30,12 +34,30 @@
 			if($.inArray(this.innerText.toLowerCase(), fieldNames) > -1) {
 				fieldId = this.id;
 			}
+
+			// Check for publish date
+			if($.inArray(this.innerText.toLowerCase(), fieldDates) > -1) {
+				fieldDateId = this.id;
+			}
 		}
 
 		// Dim unpublished entries
 		function dim() {
+
+			// Is draft?
 			if($.inArray(this.innerText.toLowerCase(), fieldToggles) == -1) {
-				$(this).parent().addClass('inactive');
+				$(this).parent().addClass('unpublishedfilter-draft');
+			}
+
+			// Is future?
+			else if(fieldDateId) {
+				var date = $(this).parent().find('.' + fieldDateId + ' time');
+
+				// This should be enhanced to also handle multiple dates and date ranges
+				if(date.length == 1 && moment(date.attr('datetime')).isAfter()) {
+					$(this).addClass('unpublishedfilter-published');
+					$(this).parent().addClass('unpublishedfilter-future');
+				}
 			}
 		}
 
