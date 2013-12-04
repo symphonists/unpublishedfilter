@@ -31,21 +31,29 @@
 
 		// Find publish status fields
 		function find() {
-			if($.inArray(this.innerText.toLowerCase(), fieldNames) > -1) {
+			var text = this.innerText.toLowerCase();
+
+			if($.inArray(text, fieldNames) > -1) {
 				fieldId = this.id;
 			}
 
 			// Check for publish date
-			if($.inArray(this.innerText.toLowerCase(), fieldDates) > -1) {
+			if($.inArray(text, fieldDates) > -1) {
 				fieldDateId = this.id;
 			}
 		}
 
 		// Dim unpublished entries
 		function dim() {
+			var text = this.innerText.toLowerCase(),
+				published = fieldToggles.some(function(value) {
+					if(text.indexOf(value) > -1) {
+						return true;
+					}
+				});
 
 			// Is draft?
-			if($.inArray(this.innerText.toLowerCase(), fieldToggles) == -1) {
+			if(published !== true) {
 				$(this).parent().addClass('unpublishedfilter-draft');
 			}
 
