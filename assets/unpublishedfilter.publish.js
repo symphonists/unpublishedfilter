@@ -4,7 +4,7 @@
 	var Unpublished = function() {
 		var fieldNames = ['status', 'published'],
 			fieldDates = ['date', 'publish date'],
-			fieldToggles = ['yes', 'published', 'activated'],
+			fieldToggles = ['yes', 'published', 'activated', 'enabled', 'visible', 'open'],
 			fieldId = null,
 			fieldDateId = null;
 

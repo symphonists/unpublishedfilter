@@ -15,22 +15,31 @@
 	 */
 	$dictionary = array(
 
-		'published' => 
-		'veröffentlicht',
-
-		'activated' => 
-		'freigeschaltet',
-
 		'status' => 
 		'Status',
-
-		'yes' =>
-		'ja',
 
 		'date' =>
 		'datum', 
 
 		'publish date' =>
-		'Veröffentlichungsdatum'
+		'Veröffentlichungsdatum',
+
+		'published' => 
+		'veröffentlicht',
+
+		'activated' => 
+		'aktiviert',
+
+		'yes' =>
+		'ja',
+
+		'enabled' =>
+		'freigeschaltet',
+
+		'open' =>
+		'offen',
+
+		'visible' =>
+		'sichtbar'
 
 	);
