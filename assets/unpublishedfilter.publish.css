@@ -2,6 +2,8 @@
 	font-family: 'icons';
 	src: url('fonts/icons.eot?45544828');
 	src: url('fonts/icons.eot?45544828#iefix') format('embedded-opentype'),
+		 url('fonts/icons.woff?45544828') format('woff'),
+		 url('fonts/icons.ttf?45544828') format('truetype'),
 		 url('fonts/icons.svg?45544828#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;

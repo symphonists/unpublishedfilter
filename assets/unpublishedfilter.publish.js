@@ -31,7 +31,9 @@
 
 		// Find publish status fields
 		function find() {
-			var text = this.innerText.toLowerCase();
+			var text = $.trim($(this).text().toLowerCase());
+
+			console.log(text);
 
 			if($.inArray(text, fieldNames) > -1) {
 				fieldId = this.id;
@@ -45,7 +47,7 @@
 
 		// Dim unpublished entries
 		function dim() {
-			var text = this.innerText.toLowerCase(),
+			var text =  $.trim($(this).text().toLowerCase()),
 				published = fieldToggles.some(function(value) {
 					if(text.indexOf(value) > -1) {
 						return true;
