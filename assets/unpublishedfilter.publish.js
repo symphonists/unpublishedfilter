@@ -33,8 +33,6 @@
 		function find() {
 			var text = $.trim($(this).text().toLowerCase());
 
-			console.log(text);
-
 			if($.inArray(text, fieldNames) > -1) {
 				fieldId = this.id;
 			}
