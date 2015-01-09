@@ -2,25 +2,14 @@
 
 
 	var Unpublished = function() {
-		var fieldNames = ['status', 'published'],
-			fieldDates = ['date', 'publish date'],
-			fieldToggles = ['yes', 'published', 'activated', 'enabled', 'visible', 'open'],
+		var fieldNames = ['status', 'published', 'veröffentlicht', 'état', 'publié', 'pubblicato'],
+			fieldDates = ['date', 'publish date', 'Datum', 'Veröffentlichungsdatum'],
+			fieldToggles = ['yes', 'published', 'activated', 'enabled', 'visible', 'open', 'ja', 'veröffentlicht', 'aktiviert', 'freigeschaltet', 'offen', 'sichtbar', 'publié', 'oui', 'pubblicato'],
 			fieldId = null,
 			fieldDateId = null;
 
 		function init() {
 			var table = $('#contents table');
-
-			// Get translations
-			$.each(fieldNames, function(index, value) {
-				fieldNames.push(translate(value));
-			});
-			$.each(fieldDates, function(index, value) {
-				fieldDates.push(translate(value));
-			});
-			$.each(fieldToggles, function(index, value) {
-				fieldToggles.push(translate(value));
-			});
 
 			// Find publish status fields
 			table.find('th').each(find);
@@ -67,14 +56,6 @@
 					$(this).parent().addClass('unpublishedfilter-future');
 				}
 			}
-		}
-
-		// Translate string
-		function translate(string) {
-			term = {};
-			term[string] = false;
-			Symphony.Language.add(term);
-			return Symphony.Language.get(string);
 		}
 
 	/*-------------------------------------------------------------------------

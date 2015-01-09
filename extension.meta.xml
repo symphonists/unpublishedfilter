@@ -18,6 +18,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="2.2.0" date="2015-01-09" min="2.3">
+			- Simplified localisation, make it work in multilingual backends.
+		</release>
 		<release version="2.1.2" date="2013-12-05" min="2.3">
 			- Fixed Firefox compatibility.
 		</release>
