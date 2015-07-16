@@ -20,6 +20,7 @@
 	<releases>
 		<release version="2.3.0" date="2015-0716" min="2.6">
 			- Introduced date range filters
+			- Removed custom Moment build
 		</release>
 		<release version="2.2.0" date="2015-01-09" min="2.3">
 			- Simplified localisation, make it work in multilingual backends.
