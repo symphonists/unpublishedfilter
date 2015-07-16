@@ -22,15 +22,20 @@
 		table = document.querySelector('#contents table');
 		headers = table.querySelectorAll('th');
 
+		// Get settings
+		var settings = Symphony.Context.get('filter-by-dates');
+
 		// Find status fields
 		prepareNeedles();
 		[].forEach.call(headers, find);
 
 		// Check entry status
 		fields.text.forEach(handleFields);
-		fields.date.forEach(function(id) {
-			handleFields(id, true);
-		});
+		if (settings !== false) {
+			fields.date.forEach(function(id) {
+				handleFields(id, true);
+			});
+		}
 	};
 
 	/**

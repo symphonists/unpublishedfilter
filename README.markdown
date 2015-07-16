@@ -11,6 +11,8 @@ It doesn't matter which field type you use, the extension just matches text valu
 
 As of version 2.1, this extension also checks for the existence of a publish date and marks and greyes out future entries additionally (using `date` or `publish date` as keywords). This only happens when the index table contains a publish status and it only works in conjuction with Date and Time fields so far (version 3.2+ required).
 
+As of version 2.3, this extension also parses date ranges. Date filtering can now be disabled in the configuration.
+
 # Acknowledgement
 
 Entypo pictograms by [Daniel Bruce](http://www.entypo.com).  
