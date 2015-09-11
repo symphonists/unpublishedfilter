@@ -18,7 +18,10 @@
 		</author>
 	</authors>
 	<releases>
-		<release version="2.3.0" date="2015-0716" min="2.6.2">
+		<release version="2.3.1" date="2015-09-11" min="2.6.2">
+			- Made value filtering less strict
+		</release>
+		<release version="2.3.0" date="2015-07-16" min="2.6.2">
 			- Introduced date range filters
 			- Removed custom Moment build
 			- Made date filtering optional (configuration setting)

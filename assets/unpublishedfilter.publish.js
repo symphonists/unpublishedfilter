@@ -113,7 +113,13 @@
 	 */
 	var checkValue = function(column) {
 		var value = getUnifiedValue(column, true),
-			status = (values.indexOf(value) > -1);
+			status = false;
+
+		values.forEach(function(token) {
+			if (value.indexOf(token) > -1) {
+				status = true;
+			}
+		});
 
 		return {
 			status: status,
