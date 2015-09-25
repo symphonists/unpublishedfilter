@@ -9,7 +9,7 @@
 	</types>
 	<authors>
 		<author>
-			<name github="symphonists" symphony="Nils">Symphony Community</name>
+			<name github="symphonists" symphony="community">Symphony Community</name>
 			<website>http://getsymphony.com</website>
 		</author>
 		<author>
@@ -26,7 +26,7 @@
 			- Removed custom Moment build
 			- Made date filtering optional (configuration setting)
 		</release>
-		<release version="2.2.0" date="2015-01-09" min="2.3.0">
+		<release version="2.2.0" date="2015-01-09" min="2.3.0" max="2.6.1">
 			- Simplified localisation, make it work in multilingual backends.
 		</release>
 		<release version="2.1.2" date="2013-12-05" min="2.3.0">
