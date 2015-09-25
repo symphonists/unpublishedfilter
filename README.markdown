@@ -15,5 +15,4 @@ As of version 2.3, this extension also parses date ranges. Date filtering can no
 
 # Acknowledgement
 
-Entypo pictograms by [Daniel Bruce](http://www.entypo.com).  
-Unpublished Filter uses [Moment.js](http://momentjs.com) for date parsing.
+Entypo pictograms by [Daniel Bruce](http://www.entypo.com).
