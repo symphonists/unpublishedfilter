@@ -9,11 +9,11 @@
 	};
 
 	var names = {
-		text: ['status', 'published', 'veröffentlicht', 'état', 'publié', 'pubblicato'],
-		date: ['date', 'publish date', 'Datum', 'Veröffentlichungsdatum', 'Zeitraum', 'Anzeigezeitraum']
+		text: ['status', 'published', 'veröffentlicht', 'état', 'publié', 'pubblicato', 'zverejnené'],
+		date: ['date', 'publish date', 'Datum', 'Veröffentlichungsdatum', 'Zeitraum', 'Anzeigezeitraum', 'Dátum', 'Dátum zverejnenia']
 	};
 
-	var values = ['yes', 'published', 'activated', 'enabled', 'visible', 'open', 'ja', 'veröffentlicht', 'aktiviert', 'freigeschaltet', 'offen', 'sichtbar', 'publié', 'oui', 'pubblicato']
+	var values = ['yes', 'published', 'activated', 'enabled', 'visible', 'open', 'ja', 'veröffentlicht', 'aktiviert', 'freigeschaltet', 'offen', 'sichtbar', 'publié', 'oui', 'pubblicato', 'áno'];
 
 	/**
 	 * Init status highlighting.
@@ -289,7 +289,7 @@
 		}
 
 		return text.trim().toLowerCase();
-	}
+	};
 
 /*-----------------------------------------------------------------------------
 	Public

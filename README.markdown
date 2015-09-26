@@ -8,12 +8,12 @@ It doesn't matter which field type you use, the extension just matches text valu
 
 Field names:
 
-- **text based:** `status`, `published`, `veröffentlicht`, `état`, `publié`, `pubblicato`
-- **date based:** `date`, `publish date`, `Datum`, `Veröffentlichungsdatum`, `Zeitraum`, `Anzeigezeitraum`
+- **text based:** `status`, `published`, `veröffentlicht`, `état`, `publié`, `pubblicato`, `zverejnené`
+- **date based:** `date`, `publish date`, `Datum`, `Veröffentlichungsdatum`, `Zeitraum`, `Anzeigezeitraum`, `Dátum`, `Dátum zverejnenia`
 
 Field values:
 
-- `yes`, `published`, `activated`, `enabled`, `visible`, `open`, `ja`, `veröffentlicht`, `aktiviert`, `freigeschaltet`, `offen`, `sichtbar`, `publié`, `oui`, `pubblicato`
+- `yes`, `published`, `activated`, `enabled`, `visible`, `open`, `ja`, `veröffentlicht`, `aktiviert`, `freigeschaltet`, `offen`, `sichtbar`, `publié`, `oui`, `pubblicato`, `áno`
 
 ## Adding language support
 
