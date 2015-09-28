@@ -18,6 +18,10 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="2.3.3" date="2015-09-26" min="2.6.2">
+			- Added Slovak language support
+			- Added missing semicolons
+		</release>
 		<release version="2.3.2" date="2015-09-25" min="2.6.2">
 			- Improved readme and documentation
 		</release>
