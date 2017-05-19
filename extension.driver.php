@@ -50,7 +50,7 @@ class Extension_Unpublishedfilter extends Extension
         Symphony::Configuration()->write();
     }
 
-    public function update($previousVersion)
+    public function update($previousVersion = false)
     {
         $this->install();
     }
