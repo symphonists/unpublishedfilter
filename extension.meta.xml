@@ -3,7 +3,7 @@
 	<name>Unpublished Filter</name>
 	<description>Greyes out unpuplished entries in the publish overview.</description>
 	<repo type="github">https://github.com/symphonists/unpublishedfilter</repo>
-	<url type="discuss">http://getsymphony.com/discuss/thread/46509</url>
+	<url type="discuss">https://getsymphony.com/discuss/thread/46509</url>
 	<types>
 		<type>Interface</type>
 	</types>
@@ -18,7 +18,7 @@
 		</author>
 	</authors>
 	<releases>
-		<release version="2.3.4" date="2018-03-05" min="2.6.2">
+		<release version="2.3.4" date="2018-03-05" min="2.6.2" max="2.x.x">
 			- PHP 7.x Compatibility
 		</release>
 		<release version="2.3.3" date="2015-09-26" min="2.6.2">
