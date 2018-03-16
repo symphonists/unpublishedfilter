@@ -18,6 +18,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="2.3.4" date="2018-03-05" min="2.6.2">
+			- PHP 7.x Compatibility
+		</release>
 		<release version="2.3.3" date="2015-09-26" min="2.6.2">
 			- Added Slovak language support
 			- Added missing semicolons
